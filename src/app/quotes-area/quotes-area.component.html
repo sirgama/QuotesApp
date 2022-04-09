@@ -1,1 +1,4 @@
 <p>quotes-area works!</p>
+<ul *ngFor="let quote of quotesall">
+  <li>{{quote.id}} {{quote.quote}} {{quote.upvotes}} {{quote.downvotes}}</li>
+</ul>
