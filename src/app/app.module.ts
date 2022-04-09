@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { QuotesAreaComponent } from './quotes-area/quotes-area.component';
 import { HighlightDirective } from './highlight.directive';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HighlightDirective } from './highlight.directive';
     FooterComponent,
     HeroComponent,
     QuotesAreaComponent,
-    HighlightDirective
+    HighlightDirective,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
