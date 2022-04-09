@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Quotearea } from '../quotearea';
 @Component({
   selector: 'app-user-form',
   templateUrl: './user-form.component.html',

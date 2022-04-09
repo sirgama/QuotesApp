@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Quotearea } from '../quotearea';
 import { UserFormComponent } from './user-form.component';
 
 describe('UserFormComponent', () => {
