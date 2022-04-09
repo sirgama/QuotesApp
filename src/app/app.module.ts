@@ -9,6 +9,8 @@ import { HeroComponent } from './hero/hero.component';
 import { QuotesAreaComponent } from './quotes-area/quotes-area.component';
 import { HighlightDirective } from './highlight.directive';
 import { UserFormComponent } from './user-form/user-form.component';
+import { FormsModule } from '@angular/forms';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { UserFormComponent } from './user-form/user-form.component';
     HeroComponent,
     QuotesAreaComponent,
     HighlightDirective,
-    UserFormComponent
+    UserFormComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

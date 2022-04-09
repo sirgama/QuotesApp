@@ -8,10 +8,10 @@ import { Quotearea } from '../quotearea';
 export class QuotesAreaComponent implements OnInit {
 
   quotesall: Quotearea[] = [
-    new Quotearea(1, "Sample Quote", 0,0),
-    new Quotearea(2, "Second Quote", 1,0),
-    new Quotearea(3, "Another Quote", 0,0),
-    new Quotearea(4, "Final sample  Quote", 5,8),
+    new Quotearea(1, "Sample Quote","Einstain","Gamaliel", 0,0),
+    new Quotearea(2, "Second Quote","Martin Luther","Kevin", 1,0),
+    new Quotearea(3, "Another Quote","Shakespere","Princess", 0,0),
+    new Quotearea(4, "Final sample  Quote","Ryan Reynolds","Zelipha", 5,8),
   ]
 
   constructor() { }
