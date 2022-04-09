@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroComponent } from './hero/hero.component';
 import { QuotesAreaComponent } from './quotes-area/quotes-area.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { QuotesAreaComponent } from './quotes-area/quotes-area.component';
     NavbarComponent,
     FooterComponent,
     HeroComponent,
-    QuotesAreaComponent
+    QuotesAreaComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
