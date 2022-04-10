@@ -1,15 +1,16 @@
 <div class="container">
-<p text-center>by: {{quoting.description}}</p>
-<p text-center> {{quoting.completeDate}} </p>
+<p text-center>Author: {{quoting.description}}</p>
+<p>Posted By:{{quoting.user}}</p>
+<p text-center>Posted On: {{quoting.completeDate}} </p>
 <div class="row justify-content-center">
   <div class="col-2">
   <img class="img-fluid delete" src="../../assets/SVG/delete-svgrepo-com.svg" alt="" (click)= 'quotingDelete(true)'><p>Delete</p>
   </div>
   <div class="col-2">
-    <img class="upvote" src="../../assets/SVG/thumbs-up.png" alt=""><p>Upvote</p>
+    <img class="upvote" src="../../assets/SVG/thumbs-up.png" alt=""><p>Upvotes {{quoting.upvote}}</p>
   </div>
   <div class="col-2">
-    <img class="downvote" src="../../assets/SVG/thumb-down.png" alt=""><p>Downvote</p>
+    <img class="downvote" src="../../assets/SVG/thumb-down.png" alt=""><p>Downvotes {{quoting.downvote}}</p>
   </div>
 </div>
 </div>
