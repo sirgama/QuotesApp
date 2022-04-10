@@ -2,8 +2,8 @@
   <h1>Quotes</h1>
   <hr>
 
-  <div class="row">
-    <div class="col-md-10">
+  <div class="row d.flex justify-content-center align-items-center">
+    <div class="col-md-8">
       <div *ngFor='let quotes of userquote;let i = index'>
         <div>
           <h4 id={{i}} >{{quotes.name}} </h4>
@@ -12,6 +12,7 @@
 
         <div *ngIf='quotes.showDescription'>
           <app-user-detail  [quoting]='quotes' (isComplete) = 'deleteQuote($event,i)'></app-user-detail>
+
         </div>
       </div>
     </div>

@@ -1,4 +1,12 @@
+<div class="container">
 <p>{{quoting.description}}</p>
 <p> {{quoting.completeDate}} </p>
-<i class="fa-solid fa-trash-can" (click)= 'quotingDelete(true)'></i>
-
+<div class="row">
+  <div class="col">
+  <p><i class="fa-solid fa-trash-can" (click)= 'quotingDelete(true)'></i></p>
+  </div>
+  <div class="col">
+    <p><i class="fas fa-arrow-alt-square-up">Upvote</i></p>
+  </div>
+</div>
+</div>
