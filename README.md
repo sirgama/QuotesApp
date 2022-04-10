@@ -30,7 +30,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 The Web Application is being hosted by Github Pages. The link to the page is:
 
-<a href="https://sirgama.github.io/QuoteApp/">https://sirgama.github.io/QuoteApp/</a>
+<a href="https://sirgama.github.io/QuotesApp/">https://sirgama.github.io/QuotesApp/</a>
 
 ## Technologies Used
 * HTML - which was used to build the structure of the pages.
