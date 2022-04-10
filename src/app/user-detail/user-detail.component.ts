@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Quote } from '../quotearea';
 
 @Component({
   selector: 'app-user-detail',
@@ -7,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserDetailComponent implements OnInit {
 
+  @Input() quoting!: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
+
+  quotingDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
   constructor() { }
 
   ngOnInit(): void {

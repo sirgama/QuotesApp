@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Quotearea } from '../quotearea';
+import { Quote } from '../quotearea';
 @Component({
   selector: 'app-quotes-area',
   templateUrl: './quotes-area.component.html',
@@ -7,12 +7,33 @@ import { Quotearea } from '../quotearea';
 })
 export class QuotesAreaComponent implements OnInit {
 
-  quotesall: Quotearea[] = [
-    new Quotearea(1, "Sample Quote","Einstain","Gamaliel", 0,0),
-    new Quotearea(2, "Second Quote","Martin Luther","Kevin", 1,0),
-    new Quotearea(3, "Another Quote","Shakespere","Princess", 0,0),
-    new Quotearea(4, "Final sample  Quote","Ryan Reynolds","Zelipha", 5,8),
-  ]
+  toggleDetails(index: number){
+    this.userquote[index].showDescription = this.userquote[index].showDescription;
+  }
+
+  deleteQuote(isComplete:boolean, index: number){
+    if (isComplete){
+      let toDelete = confirm(`Are you sure you want to delete this Quote?`)
+        if (toDelete){  this.userquote.splice(index, 1);}
+    }
+  }
+
+  userquote: Quote[] = [
+    new Quote(1, 'The greatest glory in living lies not in never falling, but in rising every time we fall. ', 'Nelson Mandela', new Date (2022,4,7)),
+    new Quote(2,'The way to get started is to quit talking and begin doing.','Walt Disney', new Date (2022,4,6)),
+    new Quote(3,'If life were predictable it would cease to be life, and be without flavor. ','Eleanor Roosevelt', new Date (2022,7,7)),
+    new Quote(4,'Life is what happens when youre busy making other plans','John Lennon', new Date (2022,5,9)),
+    new Quote(5,'Tell me and I forget. Teach me and I remember. Involve me and I learn.','Benjamin Franklin', new Date (2022,4,8)),
+    new Quote(6,'The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart.','Helen Keller',new Date (2022,6,17)),
+  ];
+
+  addNewQuoting(quote: Quote){
+    let quoteLength = this.userquote.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.userquote.push(quote)
+  }
+
 
   constructor() { }
 
@@ -20,5 +41,3 @@ export class QuotesAreaComponent implements OnInit {
   }
 
 }
-var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
-var maximum = Math.max(...arr);

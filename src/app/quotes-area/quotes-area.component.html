@@ -1,13 +1,41 @@
-<p>Itworks!</p>
-<ul *ngFor="let quote of quotesall" >
-  <div *ngIf="quote.upvotes >=4; then highlight else clean"></div>
+<div class="container">
+  <h1>Quotes</h1>
+  <hr>
 
-  <ng-template #highlight>
-    <li  appHighlight>{{quote.id}} {{quote.quote}} {{quote.upvotes}} {{quote.downvotes}}</li>
-  </ng-template>
+  <div class="row">
+    <div class="col-md-10">
+      <div *ngFor='let quotes of userquote;let i = index'>
+        <div>
+          <h4 id={{i}} >{{quotes.name}} </h4>
 
-    <ng-template #clean>
-      <li>{{quote.id}} {{quote.quote}} {{quote.upvotes}} {{quote.downvotes}}</li>
-    </ng-template>
+        </div>
 
-</ul>
+        <div *ngIf='quotes.showDescription'>
+          <app-user-detail  [quoting]='quotes' (isComplete) = 'deleteQuote($event,i)'></app-user-detail>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal">
+        Launch demo modal
+      </button>
+    </div>
+  </div>
+
+  <p ></p>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><app-user-form (addGoal)="addNewQuoting($event)"></app-user-form></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

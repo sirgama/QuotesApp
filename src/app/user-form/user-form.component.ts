@@ -1,6 +1,5 @@
-import { Quote } from '@angular/compiler';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Quotearea } from '../quotearea';
+import { Quote } from '../quotearea';
 @Component({
   selector: 'app-user-form',
   templateUrl: './user-form.component.html',
@@ -8,11 +7,13 @@ import { Quotearea } from '../quotearea';
 })
 export class UserFormComponent implements OnInit {
 
-  newquote = new Quotearea(0," "," "," ", 0,0);
-  @Output() addquote = new EventEmitter<Quotearea>();
-  // submitGoal(){
-  //   this.addquote.emit(this.newquote);
-  // }
+  newQuote = new Quote (0, "", "", new Date());
+  @Output() addGoal = new EventEmitter<Quote>();
+
+  submitQuote(){
+    this.addGoal.emit(this.newQuote);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

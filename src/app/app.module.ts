@@ -11,6 +11,7 @@ import { HighlightDirective } from './highlight.directive';
 import { UserFormComponent } from './user-form/user-form.component';
 import { FormsModule } from '@angular/forms';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { TimeElapsedPipe } from './time-elapsed.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     QuotesAreaComponent,
     HighlightDirective,
     UserFormComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    TimeElapsedPipe
   ],
   imports: [
     BrowserModule,
