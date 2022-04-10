@@ -39,9 +39,9 @@ The Web Application is being hosted by Github Pages. The link to the page is:
 
 * MDBOOTSTRAP - used to add responsiveness on the SPA.
 
-* Typescript - used to add logic and interactivity.
+* TYPESCRIPT - used to add logic and interactivity.
   
-* Angular - Framework used to make the site a fully functional SPA with various components.
+* ANGULAR - Framework used to make the site a fully functional SPA with various components.
 
 ## MIT License
 
@@ -50,7 +50,7 @@ Copyright (c) [2022] [Gamaliel Sirengo]. All Rights Reserved.
 
 ## Author Info
 
-Gamaliel Sirengo 
-https://github.com/sirgama  - Github
+Gamaliel Sirengo<br> 
+https://github.com/sirgama  - Github <br><br>
 https://t.me/sirgama  - Telegram
-<br><br><br><a class="nav-link tite" href="https://www.buymeacoffee.com/sirgamaliel"> <img class="img-fluid" src="./images/bmc-button.png" height="auto" width="200px" alt="sirgamaliel" ></a>
+
