@@ -1,7 +1,9 @@
 <div class="container">
-<p text-center>Author: {{quoting.description}}</p>
-<p>Posted By:{{quoting.user}}</p>
-<p text-center>Posted On: {{quoting.completeDate}} </p>
+  <div class="row">
+<div class="col"><h6 class="athur">Author: {{quoting.description}}</h6></div>
+<div class="col"><p>Posted By:{{quoting.user}}</p></div>
+<div class="col"><p >Posted On: {{quoting.completeDate}} </p></div>
+</div>
 <div class="row justify-content-center">
   <div class="col-3">
   <img class="img-fluid delete" src="../../assets/SVG/delete-svgrepo-com.svg" alt="" (click)= 'quotingDelete(true)'><p>Delete</p>
