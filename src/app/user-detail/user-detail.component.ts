@@ -14,6 +14,7 @@ export class UserDetailComponent implements OnInit {
   quotingDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  
   constructor() { }
 
   ngOnInit(): void {
