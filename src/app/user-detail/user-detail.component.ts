@@ -14,7 +14,13 @@ export class UserDetailComponent implements OnInit {
   quotingDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-  
+
+  upside() {
+    this.quoting.upvote = this.quoting.upvote + 1;
+  }
+  downside(){
+    this.quoting.downvote = this.quoting.downvote + 1;
+  }
   constructor() { }
 
   ngOnInit(): void {

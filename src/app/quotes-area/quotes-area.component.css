@@ -8,8 +8,8 @@
   -moz-osx-font-smoothing: grayscale;
   transition-duration: 0.3s;
   transition-property: transform;
-  height: 40vh;
-  width: 50vw;
+  height: 50vh;
+  width: 55vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
