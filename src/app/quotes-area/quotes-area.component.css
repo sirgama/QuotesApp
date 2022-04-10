@@ -1,0 +1,21 @@
+.hvr-grw {
+
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  height: 40vh;
+  width: 60vw;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+
+.hvr-grw:hover,
+.hvr-grw:focus,
+.hvr-grw:active {
+  transform: scale(1.1);
+}
