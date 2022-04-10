@@ -1,7 +1,7 @@
 # QuotesApp
-
-
-
+<img  src="../Quotes-App/src/assets/main1.png">
+<img  src="../Quotes-App/src/assets/main2.png">
+<img  src="../Quotes-App/src/assets/main3.png">
 
 
 ## Table of Contents
