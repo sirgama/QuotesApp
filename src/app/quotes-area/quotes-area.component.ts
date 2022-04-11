@@ -34,6 +34,9 @@ export class QuotesAreaComponent implements OnInit {
     this.userquote.push(quote)
   }
 
+  arr: number[] = this.userquote.map(Quote=>Quote.upvote)
+  maxval = Math.max(...this.arr)
+
 
   constructor() { }
 
