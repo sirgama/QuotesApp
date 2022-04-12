@@ -25,7 +25,7 @@ export class QuotesAreaComponent implements OnInit {
       1,
       'The greatest glory in living lies not in never falling, but in rising every time we fall. ',
       'Nelson Mandela',
-      new Date(2022, 2, 3),
+      new Date(2020, 2, 3),
       'Atieno Obwanda',
       38,
       10
@@ -34,7 +34,7 @@ export class QuotesAreaComponent implements OnInit {
       2,
       'The way to get started is to quit talking and begin doing.',
       'Walt Disney',
-      new Date(2022, 4, 1),
+      new Date(2021, 4, 1),
       'Zipporah Mukami',
       12,
       2
@@ -43,7 +43,7 @@ export class QuotesAreaComponent implements OnInit {
       3,
       'If life were predictable it would cease to be life, and be without flavor. ',
       'Eleanor Roosevelt',
-      new Date(2022, 23, 2),
+      new Date(2021, 23, 1),
       'Zelipha Wambui',
       10,
       7
@@ -52,7 +52,7 @@ export class QuotesAreaComponent implements OnInit {
       4,
       'Life is what happens when youre busy making other plans',
       'John Lennon',
-      new Date(2022, 5, 4),
+      new Date(2022, 2, 2),
       'Gamaliel Sirengo',
       9,
       20
@@ -70,7 +70,7 @@ export class QuotesAreaComponent implements OnInit {
       6,
       'The best and most beautiful things in the world cannot be seen or even touched — they must be felt with the heart.',
       'Helen Keller',
-      new Date(2022, 1, 4),
+      new Date(2021, 1, 4),
       'Samuel Hinga',
       10,
       10
