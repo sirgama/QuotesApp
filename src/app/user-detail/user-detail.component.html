@@ -1,18 +1,42 @@
 <div class="container">
   <div class="row">
-<div class="col"><h6 class="athur">Author: {{quoting.description}}</h6></div>
-<div class="col"><p>Posted By:{{quoting.user}}</p></div>
-<div class="col"><p >Posted On: {{quoting.completeDate|date}} </p></div>
-</div>
-<div class="row justify-content-center">
-  <div class="col-3">
-  <img class="img-fluid delete" src="./assets/SVG/delete-svgrepo-com.svg" alt="" (click)= 'quotingDelete(true)'><p>Delete</p>
+    <div class="col">
+      <h6 class="athur">Author: {{ quoting.description }}</h6>
+    </div>
+    <div class="col">
+      <p>Posted By:{{ quoting.user }}</p>
+    </div>
+    <div class="col">
+      <p>Posted On: {{ quoting.completeDate | date }}</p>
+    </div>
   </div>
-  <div class="col-3">
-    <img class="upvote" src="./assets/SVG/thumbs-up.png" alt="" (click)="upside()"><p >Upvotes {{quoting.upvote}}</p>
+  <div class="row justify-content-center">
+    <div class="col-3">
+      <img
+        class="img-fluid delete"
+        src="./assets/SVG/delete-svgrepo-com.svg"
+        alt=""
+        (click)="quotingDelete(true)"
+      />
+      <p>Delete</p>
+    </div>
+    <div class="col-3">
+      <img
+        class="upvote"
+        src="./assets/SVG/thumbs-up.png"
+        alt=""
+        (click)="upside()"
+      />
+      <p>Upvotes {{ quoting.upvote }}</p>
+    </div>
+    <div class="col-3">
+      <img
+        class="downvote"
+        src="./assets/SVG/thumb-down.png"
+        alt=""
+        (click)="downside()"
+      />
+      <p>Downvotes {{ quoting.downvote }}</p>
+    </div>
   </div>
-  <div class="col-3">
-    <img class="downvote" src="./assets/SVG/thumb-down.png" alt=""(click)="downside()"><p>Downvotes {{quoting.downvote}}</p>
-  </div>
-</div>
 </div>
